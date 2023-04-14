@@ -1,0 +1,46 @@
+print("Welcome to my first Game!")
+name=input("What is your name?")
+age=int(input("What is your age?"))
+print("Hello" ,name, "and you are" ,age, "old")
+health=10
+if age>=18:
+    print("You are old enough to play the game!")
+    want_to_play=input("Do you want to play? ").lower()
+    if want_to_play=="yes" :
+        print("You are starting with 10 health")
+        print("Let's play!")
+        first_choice=input("first choice.... Left or Right(left/right)? ").lower()
+        if first_choice=="left":
+            print("Nice, you follow the path and reach a lake... ")
+            choose=input("Do you swim across or around(across/around) ").lower()
+            if choose=="across":
+                print("you managed to get across,but you were bite by a fish and lost 5 health. ")
+                health-=5
+                notice=input("You notice a house and a river which do you go to (river/house)? ").lower()
+                if notice=="river":
+                    print("You fell in the river and lost !!")
+                else:
+                    print("you go to the house and greted by owner... He doesn't like you and you lost 5 health")
+                    health-=5
+                    if health<=0:
+                        print("Your health is zero and you lost the game!!")
+                    else:
+                        print("you survived!!! you win!!!")
+            else:
+                print("You went around and reached the other side of the lake")
+                notice = input("You notice a house and a river which do you go to (river/house)? ").lower()
+                if notice == "river":
+                    print("You fell in the river and lost !!")
+                else:
+                    print("you go to the house and greted by owner... He doesn't like you and you lost 5 health")
+                    health -= 5
+                    if health <= 0:
+                        print("Your health is zero and you lost the game!!")
+                    else:
+                        print("you survived!!! you win!!!")
+        else:
+            print("You fell down ad lost!!")
+    else:
+        print("Okay!!!")
+else:
+    print("You are not old enough to play the game!")
