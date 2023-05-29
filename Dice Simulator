@@ -1,0 +1,9 @@
+import random as r
+while True:
+    print("1. Roll The Dice \n2.Exit")
+    user_input = int(input("What do you want to do?\n"))
+    if user_input==1:
+        number=r.randint(1,6)
+        print("Dice Shows=",number)
+    else:
+        break
