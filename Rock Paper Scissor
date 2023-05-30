@@ -1,0 +1,26 @@
+import random
+actions=['rock','paper','scissors']
+while True:
+    user_choice=input("Enter your choice (rock, paper or scissor):")
+    program_choice=random.choice(actions)
+    print(f"Your choice {user_choice}, computer choice {program_choice} \n")
+    if user_choice==program_choice:
+        print(f"Both players selected {user_choice}. It's a tie!")
+    elif user_choice=="rock":
+        if program_choice=="scissor":
+            print("You Win! because rock smashes scissors")
+        else:
+            print("You Fail! because paper covers the rock")
+    elif user_choice== "paper":
+        if program_choice== "scissor":
+            print("You Fail! because scissors cuts the paper")
+        else:
+            print("You Win! because paper covers the rock")
+    elif user_choice=="scissor":
+        if program_choice== "rock":
+            print("You Fail! because rock smashes scissors")
+        else:
+            print("You Win! because scissors cuts the paper")
+    play_again=input('Play again?Y/N:' )
+    if play_again.lower()=='n':
+        break
