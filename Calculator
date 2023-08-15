@@ -1,0 +1,72 @@
+def add(num1,num2):
+    result=num1+num2
+    print("The sum is",result)
+def sub(num1,num2):
+    result=num1-num2
+    print("The substraction is",result)
+def prod(num1,num2):
+    result=num1*num2
+    print("The multiplication is",result)
+def div(num1,num2):
+    result=num1/num2
+    print("The division is",result)
+def floordiv(num1,num2):
+    result=num1//num2
+    print("The floordivision is",result)
+def exp(num1,num2):
+    result=num1**num2
+    print("The exponential is",result)
+def mod(num1,num2):
+    result=num1%num2
+    print("The modulus is",result)
+def sqrt(num1):
+    result=num1**(1//2)
+    print("The squareroot is",result)
+while True:
+    print("......CHOICES........\n"
+          "1.Addition\n"
+          "2.Substraction\n"
+          "3.Multiplication\n"
+          "4.Division\n"
+          "5.Floor division\n"
+          "6.Exponential\n"
+          "7.Modulus\n"
+          "8.Square root")
+    choice = int(input("Choose any choice[1,2,3,4,5,6,7,8]:"))
+    if choice == 1:
+        num1 = int(input("Enter the first number:"))
+        num2 = int(input("Enter the second number:"))
+        add(num1,num2)
+
+    elif choice == 2:
+        num1 = int(input("Enter the first number:"))
+        num2 = int(input("Enter the second number:"))
+        sub(num1,num2)
+    elif choice == 3:
+        num1 = int(input("Enter the first number:"))
+        num2 = int(input("Enter the second number:"))
+        prod(num1,num2)
+    elif choice == 4:
+        num1 = int(input("Enter the first number:"))
+        num2 = int(input("Enter the second number:"))
+        div(num1,num2)
+    elif choice == 5:
+        num1 = int(input("Enter the first number:"))
+        num2 = int(input("Enter the second number:"))
+        floordiv(num1,num2)
+    elif choice == 6:
+        num1 = int(input("Enter the first number:"))
+        num2 = int(input("Enter the second number:"))
+        exp(num1,num2)
+    elif choice == 7:
+        num1 = int(input("Enter the first number:"))
+        num2 = int(input("Enter the second number:"))
+        mod(num1,num2)
+    else:
+        num1 = int(input("Enter the number:"))
+        sqrt(num1)
+    cal = input("Do you want to calculate again?[yes/no]:")
+    if cal.lower() == 'no':
+        break
+
+
